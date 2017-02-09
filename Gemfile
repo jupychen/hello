@@ -37,7 +37,11 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  ## 学习一下 byebug这个gem，方便调试代码
   gem 'byebug', platform: :mri
+  ## 使用这个gem，在测试时构建需要的数据
+  gem 'factory_girl_rails'
+
 end
 
 group :development do
