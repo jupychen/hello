@@ -4,6 +4,7 @@ class ArticlesController < ApplicationController
   # 缩进按照一个标准，推荐两个空格，不要用制表符
   # snipped for brevity
   def index
+    authorize Article
     @articles = Article.all
 
     respond_to do |format|
